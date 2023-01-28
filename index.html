@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html class="no-js" lang="">
+
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta property="og:title" content="">
+  <meta property="og:type" content="">
+  <meta property="og:url" content="">
+  <meta property="og:image" content="">
+
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="apple-touch-icon" href="icon.png">
+  <!-- Place favicon.ico in the root directory -->
+  <link rel="stylesheet" href="app/css/styles.css">
+</head>
+
+<body>
+    
+
+    <div class="container">
+      <h1>Find your nearest pinball machine!</h1>
+      <div class="flex">
+        <div class="input-container">
+          <div class="find-location">
+            <button class="primary-button" id="get-location">Fine One Near Me</button> 
+          </div>
+    
+          <form action="https://pinballmap.com/api/v1/locations/closest_by_lat_lon.json" id="pinball-form">
+            <div class="flex">
+              <div class="latitude">
+                <label for="latitude">Latitude:</label>
+                <input id="latitude" name="latitude" type="text">
+              </div>
+      
+              <div class="longitude">
+                <label for="longitude">Longitude:</label>
+                <input id="longitude" name="longitude" type="text">
+              </div>
+            </div>
+            
+            
+            <input class="submit-form primary-button" type="submit" value="Submit Coordinates"/>
+          </form>
+        </div>
+        
+        <div class="result-container">
+          <div id="result" class="result">
+            <h2 class="result-title"></h2>
+            <h3 class="result-address"></h3>
+
+          </div>
+        </div>
+      </div>      
+    </div>
+
+  <script src="assets/js/main.js"></script>
+</body>
+
+</html>

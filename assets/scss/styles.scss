@@ -1,0 +1,86 @@
+$brand_primary: #045781;
+/* Cards component*/
+*{
+    padding:0;
+    margin:0;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 800px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.input-container, .result-container {
+    width: calc(50% - 20px);
+}
+
+.result-container{
+    margin-top: 30px;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+    margin-top: 20px;
+}
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+}
+
+#pinball-form {
+    input[type='text'] {
+        padding: 10px 20px;
+        max-width: 100%;
+    }
+    .latitude {
+        margin-right: 10px;
+    }
+
+    .latitude, .longitude {
+        width: calc(50% - 20px);
+    }
+
+    .submit-form {
+        display:block;
+    }
+}
+
+h1 {
+    max-width: 800px;
+    margin: 40px auto;
+    color: #fd0091;
+    font-size: 40px;
+    text-align: center;    
+}
+
+.primary-button {
+    background: #fd0091;
+    color: #fff;
+    padding: 20px 20px;
+    outline: none;
+    border: 2px solid #fd0091;
+    text-transform: uppercase;
+    font-size: 18px;
+    letter-spacing: 2px;
+    border-radius: 5px;
+    width: 100%;
+    margin-top: 30px;
+    cursor: pointer;
+    transition: all .5s;
+}
+
+.primary-button:hover{
+    background: #fff;
+    border: 2px solid #fd0091;
+    color: #fd0091;
+}
+
+label {
+    font-size: 20px;
+}
+
+@import 'components/quote-slider.scss';

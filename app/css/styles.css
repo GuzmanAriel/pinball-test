@@ -1,0 +1,153 @@
+/* Cards component*/
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 800px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.input-container, .result-container {
+  width: calc(50% - 20px);
+}
+
+.result-container {
+  margin-top: 30px;
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;
+  margin-top: 20px;
+}
+
+.flex {
+  display: flex;
+  justify-content: space-between;
+}
+
+#pinball-form input[type=text] {
+  padding: 10px 20px;
+  max-width: 100%;
+}
+#pinball-form .latitude {
+  margin-right: 10px;
+}
+#pinball-form .latitude, #pinball-form .longitude {
+  width: calc(50% - 20px);
+}
+#pinball-form .submit-form {
+  display: block;
+}
+
+h1 {
+  max-width: 800px;
+  margin: 40px auto;
+  color: #fd0091;
+  font-size: 40px;
+  text-align: center;
+}
+
+.primary-button {
+  background: #fd0091;
+  color: #fff;
+  padding: 20px 20px;
+  outline: none;
+  border: 2px solid #fd0091;
+  text-transform: uppercase;
+  font-size: 18px;
+  letter-spacing: 2px;
+  border-radius: 5px;
+  width: 100%;
+  margin-top: 30px;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+
+.primary-button:hover {
+  background: #fff;
+  border: 2px solid #fd0091;
+  color: #fd0091;
+}
+
+label {
+  font-size: 20px;
+}
+
+.swiper-quote-slider {
+  width: 100%;
+}
+.swiper-quote-slider .swiper-pagination-bullet {
+  background: #fff;
+  opacity: 1;
+  width: 10px;
+  height: 10px;
+}
+.swiper-quote-slider .swiper-pagination-bullet.swiper-pagination-bullet-active {
+  background: #A8D06D;
+}
+
+.paragraph--type--quote__container {
+  background: #045781;
+  position: relative;
+}
+
+.paragraph--type--quote__item {
+  color: #fff;
+  max-width: 950px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 125px 60px;
+}
+@media screen and (max-width: 820px) {
+  .paragraph--type--quote__item {
+    padding: 60px 25px;
+  }
+}
+
+.paragraph--type--quote__quote {
+  font-size: 27px;
+  line-height: 36px;
+}
+
+.paragraph--type--quote__author {
+  font-size: 14px;
+}
+.paragraph--type--quote__author-job {
+  text-transform: uppercase;
+}
+
+.paragraph--type--quote__link {
+  font-size: 16px;
+  text-transform: uppercase;
+}
+
+.swiper-button-prev {
+  background-image: url(../../assets/images/left-arrow.svg) !important;
+  background-repeat: no-repeat;
+  width: 50px;
+}
+@media screen and (max-width: 620px) {
+  .swiper-button-prev {
+    display: none;
+  }
+}
+
+.swiper-button-next {
+  background-image: url(../../assets/images/right-arrow.svg) !important;
+  background-repeat: no-repeat;
+  width: 50px;
+}
+@media screen and (max-width: 620px) {
+  .swiper-button-next {
+    display: none;
+  }
+}
+
+.swiper-button-next::after, .swiper-button-prev::after {
+  content: "";
+}

@@ -1,0 +1,75 @@
+.swiper-quote-slider {
+    width: 100%;
+
+    .swiper-pagination-bullet {
+        background: #fff;
+        opacity: 1;
+        width: 10px;
+        height: 10px;
+
+        &.swiper-pagination-bullet-active {
+            background: #A8D06D;
+        }
+    }
+}
+
+
+.paragraph--type--quote__container {
+    background: $brand_primary;
+    position: relative;
+}
+
+.paragraph--type--quote__item {
+    color: #fff;
+    max-width: 950px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 125px 60px;
+
+    @media screen and (max-width: 820px) { 
+        padding: 60px 25px;
+    }
+}
+
+.paragraph--type--quote__quote {
+    font-size: 27px;
+    line-height: 36px;
+}
+
+.paragraph--type--quote__author {
+    font-size: 14px;
+
+    &-job{
+        text-transform: uppercase;
+    }
+}
+
+.paragraph--type--quote__link {
+    font-size: 16px;
+    text-transform: uppercase;
+}
+
+
+.swiper-button-prev {
+    background-image: url(../../assets/images/left-arrow.svg) !important;
+    background-repeat: no-repeat;
+    width: 50px;
+
+    @media screen and (max-width: 620px) { 
+        display: none;
+    }
+}
+  
+.swiper-button-next {
+    background-image: url(../../assets/images/right-arrow.svg) !important;
+    background-repeat: no-repeat;
+    width: 50px;
+
+    @media screen and (max-width: 620px) { 
+        display: none;
+    }
+}
+
+  .swiper-button-next::after, .swiper-button-prev::after {
+    content: "";
+    } 

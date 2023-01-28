@@ -1,0 +1,8 @@
+/* Cards component*/
+
+.paragraph--type--cards {
+    background-image: url(../../assets/images/background-left.png), url(../../assets/images/background-right.png);
+    background-position: right bottom, left top;
+    background-repeat: no-repeat, repeat;
+    padding: 15px;
+}
